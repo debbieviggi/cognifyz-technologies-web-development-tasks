@@ -1,0 +1,8 @@
+div {
+  position: static;
+  border: 3px solid #fff;
+}
+
+div img {
+  width: 50px;
+}

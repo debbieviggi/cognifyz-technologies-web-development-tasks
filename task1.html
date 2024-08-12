@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        section img {
+            max-width: 500px;
+            margin: 20px;
+            padding: 20px;
+            align-items: center;
+        }
+        
+        section p {
+            font-family: "Times New Roman", Times, serif;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+        
+        nav a:hover {
+            background-color: #4a8d2d;
+        }
+        
+        .center-container {
+            text-align: center;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            /* Set the initial button color */
+            color: #fff;
+            /* Set the text color */
+            border: none;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"].clicked {
+            background-color: #e74c3c;
+            /* Change the button color when clicked */
+        }
+    </style>
+    <script>
+        var submitButton = document.getElementById("submitButton");
+        var form = document.querySelector("form");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevents the form from submitting (you can remove this line if you want to submit the form)
+            submitButton.classList.add("clicked");
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Florism</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Welcome to Florismm...!</h2>
+        <p>Explore a variety of beautiful flowers for every occasion.</p>
+        <p>1. Lily</p>
+        <img src="lily.jpg" alt="lily img" />
+        <p>
+            Lilies are one of the most popular and versatile flowers in the world. Coming in a variety of colors and known for their strong fragrance, this elegant bloom is a show-stopper on its own while also serving as the perfect complement to any bouquet. In
+            fact, lilies are one of the most popular flowers in the world, and it's not hard to see why. There are over 100 different types of true lilies belonging to the “lilium” genus. Lilies are found predominantly in the Northern Hemisphere.
+        </p>
+        <p>2. Rose</p>
+        <img src="rose.jpg" alt="rose img" />
+        <p>
+            Like the flower itself, the history of the rose is very colorful. Roses have been naturally growing for over 35 million years! However, they were not known to be cultivated until about 5,000 years ago. Their usage began not just as a decorative touch
+            to one’s home, but they were also used for medicinal purposes and to make perfumes, and their petals were even used as confetti for festive occasions. Getting your roses into water quickly is the first step in caring for them. Fill a vase
+            three-fourths full of fresh, cool tap water. The roses will absorb the water, soaking up the nutrients that will travel up to the bloom and create a lively flower.
+        </p>
+    </section>
+
+    <form>
+        <label for="inputField">Your feedback:</label>
+        <input type="text" id="inputField" name="inputField" placeholder="Type here..." />
+        <div class="center-container">
+            <form>
+                <input type="submit" id="submitButton" value="Submit" />
+            </form>
+        </div>
+    </form>
+</body>
+
+</html>
